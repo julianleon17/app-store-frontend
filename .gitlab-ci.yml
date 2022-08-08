@@ -18,5 +18,3 @@ unit-test-job:
   stage: test
   script:
     - npm run dev
-
-build
