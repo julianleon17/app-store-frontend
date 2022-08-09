@@ -10,7 +10,7 @@ build-job:
   stage: build
   before_script:
     - echo "Launching the project..."
-    - npm ci --include=dev
+    - npm install --include=dev
   script:
     - echo "Compiling the code..."
     - echo "Compile complete."
