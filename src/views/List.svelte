@@ -1,10 +1,10 @@
 <script>
-  import ProductTemp from '../components/ProductTemp.svelte';
-  import Toast from '../components/Toast.svelte';
-  import ValidateUser from '../lib/ValidateUser.svelte';
-  import { products } from '../stores/stores.js';
+  import ProductTemp from '@/components/ProductTemp.svelte';
+  import Toast from '@/components/Toast.svelte';
+  import ValidateUser from '@/lib/ValidateUser.svelte';
+  import { products } from '@/stores/stores.js';
   import { onMount } from 'svelte';
-  import api from '../lib/api';
+  import api from '@/lib/api';
 
   onMount( async () => {
     products.reset( await api.getProducts() );

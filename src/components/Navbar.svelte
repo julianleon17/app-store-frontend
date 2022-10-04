@@ -1,7 +1,7 @@
 <script>
   import { Router, Link, Route } from 'svelte-routing';
-  import { user } from '../stores/stores';
-  import { logOut } from '../lib/firebase';
+  import { user } from '@/stores/stores';
+  import { logOut } from '@/lib/firebase';
 
   async function closeSession() {
     await logOut();

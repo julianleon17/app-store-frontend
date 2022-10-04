@@ -1,12 +1,12 @@
 <script>
   // Router
-  import Router from './routes/Router.svelte';
+  import Router from '@/routes/Router.svelte';
 
   // Components
-  import Navbar from './components/Navbar.svelte';
+  import Navbar from '@/components/Navbar.svelte';
 
   // Logic
-  import { user } from './stores/stores';
+  import { user } from '@/stores/stores';
   import { onMount } from 'svelte';
 
   onMount( async () => {

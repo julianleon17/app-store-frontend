@@ -1,9 +1,9 @@
 <script>
-  import { products, toastActions } from '../stores/stores.js';
-  import ValidateUser from '../lib/ValidateUser.svelte';
-  import CreateForm from '../components/CreateForm.svelte';
-  import Toast from '../components/Toast.svelte';
-  import api from '../lib/api';
+  import { products, toastActions } from '@/stores/stores.js';
+  import ValidateUser from '@/lib/ValidateUser.svelte';
+  import CreateForm from '@/components/CreateForm.svelte';
+  import Toast from '@/components/Toast.svelte';
+  import api from '@/lib/api';
 
   // Add
   function addProduct( event ) {

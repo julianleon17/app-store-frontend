@@ -1,8 +1,8 @@
 <script>
-  import { user } from '../stores/stores';
+  import { user } from '@/stores/stores';
   import { navigate } from 'svelte-routing';
-  import { signInUser } from '../lib/firebase';
-  import UserForm from '../components/UserForm.svelte';
+  import { signInUser } from '@/lib/firebase';
+  import UserForm from '@/components/UserForm.svelte';
 
   async function registerUser( event ) {
     const credentials = event.detail;

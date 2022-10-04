@@ -1,6 +1,6 @@
 <script>
-  import { user } from '../stores/stores';
-  import ValidateUser from '../lib/ValidateUser.svelte';
+  import { user } from '@/stores/stores';
+  import ValidateUser from '@/lib/ValidateUser.svelte';
 </script>
 
 <ValidateUser />

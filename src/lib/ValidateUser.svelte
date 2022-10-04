@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { navigate } from 'svelte-routing';
-  import { user } from '../stores/stores';
+  import { user } from '@/stores/stores';
 
   onMount( () => {
     if ( !$user ) {

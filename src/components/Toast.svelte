@@ -1,5 +1,5 @@
 <script>
-  import { toastActions } from '../stores/stores.js';
+  import { toastActions } from '@/stores/stores.js';
   let toastLive;
   let toastInstancia;
 

@@ -6,12 +6,12 @@
   // import Home from './Home.svelte';
 
   // Views
-  import Home from '../views/Home.svelte';
-  import Create from '../views/Create.svelte';
-  import Login from '../views/Login.svelte';
-  import SignIn from '../views/SignIn.svelte';
-  import List from '../views/List.svelte';
-  import Account from '../views/Account.svelte';
+  import Home from '@/views/Home.svelte';
+  import Create from '@/views/Create.svelte';
+  import Login from '@/views/Login.svelte';
+  import SignIn from '@/views/SignIn.svelte';
+  import List from '@/views/List.svelte';
+  import Account from '@/views/Account.svelte';
 </script>
 
 <!-- Routing -->
