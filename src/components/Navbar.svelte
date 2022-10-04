@@ -7,8 +7,6 @@
     await logOut();
     user.setUser( null );
   }
-
-  // console.log( $user );
 </script>
 
 <header class="site-header sticky-top py-1 bg-dark">

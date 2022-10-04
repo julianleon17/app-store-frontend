@@ -1,10 +1,6 @@
 <script>
   import { Router, Link, Route } from 'svelte-routing';
 
-  // Routes
-  // import Crud from './Crud.svelte';
-  // import Home from './Home.svelte';
-
   // Views
   import Home from '@/views/Home.svelte';
   import Create from '@/views/Create.svelte';
@@ -16,7 +12,6 @@
 
 <!-- Routing -->
 <Router>
-  <!-- <Route path="/crud" component={ Crud } /> -->
   <Route path="/"> <Home /> </Route>
   <Route path="/login"> <Login /> </Route>
   <Route path="/signin"> <SignIn /> </Route>

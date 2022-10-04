@@ -27,7 +27,6 @@ const app = initializeApp( firebaseConfig );
 
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth( app );
-// const user = auth.currentUser;
 
 function getCurrentUser() {
   return new Promise( ( resolve, reject ) => {
@@ -41,22 +40,23 @@ function logIn( email, password ) {
   return new Promise( ( resolve, reject ) => {
     signInWithEmailAndPassword( auth, email, password )
     .then( ( credentials ) => {
-      // console.log( credentials );
       resolve( credentials.user )
     }, reject );
   } );
 }
 
 // Register with Google
-// function logIn() {
-//   return new Promise( ( resolve, reject ) => {
-//     signInWithPopup( auth, provider )
-//     .then( ( res ) => {
-//       console.log( res );
-//       resolve( res.user )
-//     }, reject );
-//   } );
-// }
+/*
+function logIn() {
+  return new Promise( ( resolve, reject ) => {
+    signInWithPopup( auth, provider )
+    .then( ( res ) => {
+      console.log( res );
+      resolve( res.user )
+    }, reject );
+  } );
+}
+*/
 
 function logOut() {
   return new Promise( ( resolve, reject ) => {
@@ -71,12 +71,10 @@ function signInUser( email, password ) {
   return new Promise( ( resolve, reject ) => {
     createUserWithEmailAndPassword( auth, email, password )
     .then( ( credentials ) => {
-      // console.log( credentials );
       resolve( credentials );
     }, reject )
   } );
 }
-
 
 // Export
 export {
